@@ -1,0 +1,17 @@
+ports:
+  - protocol: "HTTPS"
+    targetProtocol: "HTTP"
+    listeningPort: "443"
+    targetPort: "34343"
+    public: true
+    path: "/"
+    isAuth: false
+    login: ""
+    password: ""
+environments:
+  - key: "SOFTWARE_VERSION_TAG"
+    value: "latest"
+  - key: "SOFTWARE_PASSWORD"
+    value: "random_password"
+  - key: "EMAIL"
+    value: '[EMAIL]'
