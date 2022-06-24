@@ -1,7 +1,7 @@
 version: '3'
 services:
   postgres:
-    image: postgres: ${SOFTWARE_VERSION_TAG}
+    image: postgres:${SOFTWARE_VERSION_TAG}
     restart: always
     environment:
       POSTGRES_DB: postgres
