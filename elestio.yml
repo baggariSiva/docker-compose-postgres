@@ -3,6 +3,17 @@ ports:
     targetProtocol: "HTTP"
     listeningPort: "443"
     targetPort: "34343"
+    targetIP: "172.17.0.1"
+    public: true
+    path: "/"
+    isAuth: true
+    login: "root"
+    password: "random_password"
+  - protocol: "TCP"
+    targetProtocol: "TCP"
+    listeningPort: "34343"
+    targetIP: "172.17.0.1"
+    targetPort: "34523"
     public: true
     path: "/"
     isAuth: false
