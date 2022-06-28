@@ -26,3 +26,5 @@ services:
       - postgres
     volumes:
       - ./servers.json:/pgadmin4/servers.json
+      - /root/.acme.sh/vm.appdrag.net/fullchain.cer:/certs/server.cert
+      - /root/.acme.sh/vm.appdrag.net/vm.appdrag.net.key:/certs/server.key
